@@ -12,5 +12,4 @@ jobs:
         env:
           ARGON_SCANNER: https://demo-actions.argon.io
         with:
-          audit-only: true
           argon-token: "${{ secrets.ARGON_TOKEN }}"
