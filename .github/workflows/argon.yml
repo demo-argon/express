@@ -15,3 +15,7 @@ jobs:
         with:
           audit-only: true
           argon-token: "${{ secrets.ARGON_TOKEN }}"
+          scanners: | 
+            dockerfiles
+            dockerImagesVulnerabilities
+            iac
