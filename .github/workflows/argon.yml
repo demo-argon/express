@@ -11,7 +11,7 @@ jobs:
         uses: docker://argonsecurity/scanner:github-0.1.119-debug-github.5
         env:
           ARGON_SCANNER: https://demo-actions.argon.io
-          DEBUG: "true"
+          DEBUG: true
         with:
           audit-only: true
           argon-token: "${{ secrets.ARGON_TOKEN }}"
